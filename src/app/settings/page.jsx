@@ -122,7 +122,7 @@ export default function Settings() {
             <div className="flex justify-between flex-row items-center text-lg p-4 rounded-lg shadow bg-[var(--secondary-background)]" >
                 <a href="https://www.instagram.com/">
                     <svg
-                        class="w-15 h-15 text-gray-800 dark:text-white"
+                        class="w-15 h-15 text-gray-800 "
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         width="50"
                         height="50"
@@ -139,7 +139,7 @@ export default function Settings() {
                 </a>
                 <a href="https://twitter.com">
                     <svg
-                        class="w-15 h-15 text-gray-800 dark:text-white"
+                        class="w-15 h-15 text-gray-800 "
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         width="50" height="50" fill="currentColor"
                         viewBox="0 0 24 24">
@@ -151,7 +151,7 @@ export default function Settings() {
                 </a>
                 <a href="https://www.youtube.com/watch?v=Z_AjDK9BuSc&t=4s&ab_channel=MrAndreitus">
                     <svg
-                        class="w-15 h-15 text-gray-800 dark:text-white"
+                        class="w-15 h-15 text-gray-800 "
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         width="50"
                         height="50"
@@ -166,7 +166,7 @@ export default function Settings() {
                 </a>
                 <a href="https://web.facebook.com/">
                     <svg
-                        class="w-15 h-15 text-gray-800 dark:text-white"
+                        class="w-15 h-15 text-gray-800 "
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         width="50"
