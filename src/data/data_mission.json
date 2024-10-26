@@ -1,0 +1,11 @@
+[
+    {"tittle": "Explorador de Ideas", "body":"Visita al menos 5 stands de emprendedores."},
+    {"tittle": "Cazador de Alianzas", "body":"Encuentra una posible alianza con un emprendimiento."},
+    {"tittle": "Mentor Express", "body":"Da feedback a un emprendedor y compártelo en redes."},
+    {"tittle": "Participante Estrella", "body":"Participa en una actividad y publica lo que aprendiste."},
+    {"tittle": "Sintetizador Maestro", "body":"Resume una charla en 5 minutos y compártelo."},
+    {"tittle": "Caza-Tips", "body":"Habla con un experto y publica un tip que aprendiste."},
+    {"tittle": "Debatiente Activo", "body":"Únete a un debate y reflexiona sobre el tema."},
+    {"tittle": "Implementador Creativo", "body":"Aplica una idea del foro en un proyecto personal."}
+
+]
