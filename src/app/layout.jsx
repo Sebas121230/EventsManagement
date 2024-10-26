@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import NavBar from "@/components/navBar/navBar";
+import Script from 'next/Script'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,11 +32,11 @@ export default function RootLayout({ children }) {
           crossorigin=""
         />
 
-        <script
+        <Script
           src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
           integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
           crossorigin=""
-        ></script>
+        ></Script >
         <NavBar />
         <div className="flex flex-col pb-40">
           {children}
