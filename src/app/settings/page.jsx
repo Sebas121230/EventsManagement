@@ -149,7 +149,7 @@ export default function Settings() {
                             clip-rule="evenodd" />
                     </svg>
                 </a>
-                <a href="https://www.youtube.com/watch?v=Z_AjDK9BuSc&t=4s&ab_channel=MrAndreitus">
+                <a href="https://youtu.be/YdNmbc_5RvE?si=CsiNUg05vIiIKoUB">
                     <svg
                         class="w-15 h-15 text-gray-800 "
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg"

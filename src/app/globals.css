@@ -7,7 +7,7 @@
    --foreground: #2D2D2D;
     --accent: #C4916B;
     --secondary-background: #FFD77D;
-    --highlight: #FFD700;
+    --highlight: #fae153;
 }
 
 body {
@@ -27,4 +27,9 @@ span{
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.leaflet-container {
+  height: 100vh;
+  width: 100wh;
 }
