@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { styles } from "./styles_home"
+import Link from 'next/link';
 import { Qr_scanner } from "@/components/qr_scanner/qr_scanner";
 
 const eventos = [
@@ -27,20 +28,20 @@ const eventos = [
   },
   {
     id: 3,
-    nombre: "Lanzamiento Iphone 15 Colombia",
+    nombre: "Foro de Emprendimiento Tecnológico",
     fechaInicio: "2025-12-05T18:30:00",
     duracion: "4 horas",
-    invitados: ["CEO Apple", "Mac-Center Colombia"],
+    invitados: ["Marcos Pérez", "Elena Gómez", "David Castro"],
     lugar: "Hacienda San Luis",
     maxAsistentes: 200,
-    imagen: "/images/evento3.jpg"
+    imagen: "/images/evento3-1.jpg"
   },
   {
     id: 4,
     nombre: "Seminario de Marketing",
     fechaInicio: "2025-12-12T10:00:00",
     duracion: "5 horas",
-    invitados: ["Equipo de Marketing Frisby Colombia"],
+    invitados: ["Equipo de Microsoft Student Partners", "Equipo de Desarrollo Google"],
     lugar: "Hacienda Casa Morelli",
     maxAsistentes: 80,
     imagen: "/images/evento4.jpg"
@@ -49,7 +50,7 @@ const eventos = [
     id: 5,
     nombre: "Hackathon Universitario",
     fechaInicio: "2025-09-08T08:00:00",
-    duracion: "48 horas",
+    duracion: "8 horas",
     invitados: ["Universidad de Cundinamarca"],
     lugar: "Universidad de Cundinamarca Sede Chia",
     maxAsistentes: 50,
@@ -57,20 +58,20 @@ const eventos = [
   },
   {
     id: 6,
-    nombre: "Exposición Panasonic",
+    nombre: "Exposición de Realidad Virtual",
     fechaInicio: "2025-10-20T11:00:00",
     duracion: "6 horas",
-    invitados: ["Equipo de Diseño Panasonic" , "Director Panasonic Colombia"],
+    invitados: ["Arturo Vega", "Marina Solís"],
     lugar: "Centro de Convenciones Agora",
     maxAsistentes: 120,
-    imagen: "/images/evento6.jpg"
+    imagen: "/images/evento6-1.jpg"
   },
   {
     id: 7,
     nombre: "Taller Inteligencia Artificial",
     fechaInicio: "2025-10-10T19:00:00",
     duracion: "5 horas",
-    invitados: ["Universidad de la Sabana" , "Universidad Nacional"],
+    invitados: ["Universidad de la Sabana", "Universidad Nacional"],
     lugar: "Universidad de la Sabana",
     maxAsistentes: 500,
     imagen: "/images/evento7.jpg"
@@ -79,7 +80,8 @@ const eventos = [
 
 const EventCard = ({ evento }) => {
   return (
-    <div className="card w-full bg-white shadow-lg rounded-lg overflow-hidden mb-6 hover:shadow-xl transition-shadow duration-300">
+    <Link href={`/eventos/${evento.id}`} passHref>
+      <div className="card w-full bg-white shadow-lg rounded-lg overflow-hidden mb-6 hover:shadow-xl transition-shadow duration-300 cursor-pointer"></div>
       {evento.imagen && (
         <Image
           className="w-full h-48 object-cover"
@@ -91,10 +93,10 @@ const EventCard = ({ evento }) => {
       )}
       <div className="p-4">
         <h3 className="text-xl font-bold mb-2">{evento.nombre}</h3>
-        <p className="text-gray-600 mb-1"><strong>Fecha:</strong> {new Date(evento.fechaInicio).toLocaleDateString('es-ES', { 
-          weekday: 'long', 
-          year: 'numeric', 
-          month: 'long', 
+        <p className="text-gray-600 mb-1"><strong>Fecha:</strong> {new Date(evento.fechaInicio).toLocaleDateString('es-ES', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
           day: 'numeric',
           hour: '2-digit',
           minute: '2-digit'
@@ -104,7 +106,7 @@ const EventCard = ({ evento }) => {
         <p className="text-gray-600 mb-1"><strong>Lugar:</strong> {evento.lugar}</p>
         <p className="text-gray-600"><strong>Máx. asistentes:</strong> {evento.maxAsistentes}</p>
       </div>
-    </div>
+    </Link >
   );
 };
 
@@ -125,7 +127,7 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center">
-        <Qr_scanner/>
+        <Qr_scanner />
       </div>
 
       <div className="container mx-auto px-4 py-8">
