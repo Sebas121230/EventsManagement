@@ -114,7 +114,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <div className={styles.header}>
-        <h1 className={styles.h1}>Bienvenido a EventManagement</h1>
+        <h1 className={styles.h1}>Bienvenido a Sabana Business</h1>
         <div>
           <Image
             className={styles.imageLogo}

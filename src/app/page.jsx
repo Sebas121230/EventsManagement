@@ -9,7 +9,7 @@ const LandingPage = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-amber-900 mb-6">
-              Gestión de Eventos Simplificada
+              Sabana Business
             </h1>
             <p className="text-lg text-amber-800 mb-8">
               Optimiza cada etapa de tus eventos, desde la planificación hasta el análisis posterior,
@@ -98,7 +98,7 @@ const LandingPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">EventManagement</h3>
+              <h3 className="text-xl font-bold mb-4">Sabana Business</h3>
               <p className="text-black">
                 Revolucionando la industria de eventos a través de la innovación tecnológica.
               </p>
